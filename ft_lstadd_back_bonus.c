@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:36:22 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 21:51:56 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/27 22:31:56 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if(!lst || !new)
+	if (!lst || !new)
 		return ;
-	if(*lst)
+	if (*lst)
 		ft_lstlast(*lst)->next = new;
 	else
 		*lst = new;
