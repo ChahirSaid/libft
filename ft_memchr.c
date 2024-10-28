@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:20:28 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/24 11:54:11 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 20:35:16 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
-			i++;
+			return ((void *)(str + i));
+		i++;
 	}
 	return (NULL);
 }

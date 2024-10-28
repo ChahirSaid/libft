@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:12:25 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 14:22:34 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:16:40 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*node;
+	t_list	*new_node;
 
-	node = (t_list *)malloc(sizeof(t_list));
-	if (!node)
+	new_node = (t_list *)malloc(sizeof(t_list));
+	if (!new_node)
 		return (NULL);
-	node->content = content;
-	node->next = NULL;
-	return (node);
+	new_node->content = content;
+	new_node->next = NULL;
+	return (new_node);
 }

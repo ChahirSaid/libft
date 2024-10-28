@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:13:50 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 14:21:26 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 16:16:04 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 		write(fd, s++, 1);
 }

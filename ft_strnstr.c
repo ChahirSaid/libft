@@ -6,30 +6,27 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:27:53 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 13:26:25 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 20:34:48 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t n)
+char	*ft_strnstr(const char *str, const char *target, size_t len)
 {
-	size_t	i;
-	size_t	j;
+	size_t	target_len;
 
-	if (to_find[0] == 0)
-		return ((char *)str);
-	i = 0;
-	while (str[i] && i < n)
+	target_len = 0;
+	while (target[target_len])
+		target_len++;
+	if (target_len > len)
+		return (NULL);
+	while (*str && len >= target_len)
 	{
-		j = 0;
-		while (to_find[j] == str[i + j] && (i + j) < n)
-		{
-			j++;
-			if (to_find[j] == 0)
-				return ((char *)(str + i));
-		}
-		i++;
+		if (ft_strncmp(str, target, target_len) == 0)
+			return ((char *)str);
+		str++;
+		len--;
 	}
-	return (0);
+	return (NULL);
 }

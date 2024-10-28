@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:13:27 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 13:04:39 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 20:27:48 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	if (!dest || !src)
-		return (0);
 	i = 0;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
 	while (i < n)
 	{
-		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+		d[i] = s[i];
 		i++;
 	}
 	return (dest);

@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:59:01 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 14:23:29 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 16:13:10 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ static size_t	ft_intlen(long n)
 	size_t	len;
 
 	len = 0;
-	if (n < 0)
+	if (n <= 0)
 	{
-		n = -n;
 		len++;
+		if (n == 0)
+			return (1);
+		n = -n;
 	}
 	while (n > 0)
 	{

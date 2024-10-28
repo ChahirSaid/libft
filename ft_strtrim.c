@@ -6,7 +6,7 @@
 /*   By: schahir <schahir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:34:07 by schahir           #+#    #+#             */
-/*   Updated: 2024/10/27 13:47:55 by schahir          ###   ########.fr       */
+/*   Updated: 2024/10/28 20:02:21 by schahir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*str;
 
+	if (!s1 || !set)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1) - 1;
 	while (s1[start] && ft_totrim(s1[start], set))
