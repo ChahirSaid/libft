@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *str, const char *target, size_t len)
 	target_len = 0;
 	while (target[target_len])
 		target_len++;
+	if (target_len == 0)
+		return ((char *)str);
 	if (target_len > len)
 		return (NULL);
 	while (*str && len >= target_len)
