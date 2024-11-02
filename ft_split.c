@@ -56,7 +56,7 @@ static char	*ft_worddup(const char *str, char d)
 
 static char	**ft_free_split(char **strs, int count)
 {
-	while (count-- > 0)
+	while (count--)
 		free(strs[count]);
 	free(strs);
 	return (NULL);
