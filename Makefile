@@ -20,7 +20,7 @@ CC			= gcc
 RM			= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
 
 .c.o:
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
@@ -32,6 +32,7 @@ all: ${NAME}
 
 bonus: ${NAME} ${BONUS_OBJS}
 	${LIBC} ${NAME} ${BONUS_OBJS}
+	touch bonus
 
 clean:
 	${RM} ${OBJS} ${BONUS_OBJS}
