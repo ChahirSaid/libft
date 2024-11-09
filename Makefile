@@ -32,7 +32,7 @@ all: ${NAME}
 
 bonus: ${NAME} ${BONUS_OBJS}
 	${LIBC} ${NAME} ${BONUS_OBJS}
-	touch bonus
+	@touch bonus
 
 clean:
 	${RM} ${OBJS} ${BONUS_OBJS}
