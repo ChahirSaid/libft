@@ -22,7 +22,7 @@ CFLAGS		= -Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
 
-.c.o:
+%.o: %.c 
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}: ${OBJS}
