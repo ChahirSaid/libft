@@ -81,7 +81,7 @@ char	**ft_split(char const *s, char c)
 		{
 			strs[i] = ft_worddup(s, c);
 			if (!strs[i])
-				return (ft_free_split(strs, i));
+				return (ft_free_split(&strs, i));
 			i++;
 		}
 		while (*s && *s != c)
