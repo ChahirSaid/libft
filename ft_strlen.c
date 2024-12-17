@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * ft_strlen - calculates the length of the string str, excluding the terminating null byte ('\0').
+ *
+ * @str: The string to calculate the length of.
+ *
+ * Return: The length of the string.
+ */
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;

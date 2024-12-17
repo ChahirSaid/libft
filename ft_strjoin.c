@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * ft_strjoin - concatenates two strings.
+ *
+ * @s1: The prefix string.
+ * @s2: The suffix string.
+ *
+ * Return: The new string or NULL if the allocation fails.
+ */
 static char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
@@ -26,6 +34,14 @@ static char	*ft_strcpy(char *dest, const char *src)
 	return (dest);
 }
 
+/**
+ * ft_strcat - concatenates two strings.
+ *
+ * @dest: The destination string.
+ * @src: The source string.
+ *
+ * Return: The destination string.
+ */
 static char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;
@@ -45,6 +61,13 @@ static char	*ft_strcat(char *dest, const char *src)
 	return (dest);
 }
 
+/**
+ * ft_strlen - counts the number of characters in a null-terminated string.
+ *
+ * @str: The string to count the characters of.
+ *
+ * Return: The number of characters in the string.
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;

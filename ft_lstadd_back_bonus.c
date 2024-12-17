@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstadd_back - adds the element ’new’ at the end of the list.
+ *
+ * @lst: The address of a pointer to the first link of a list.
+ * @new: The address of a pointer to the element to be added to the list.
+ *
+ * Return: None.
+ */
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!lst || !new)

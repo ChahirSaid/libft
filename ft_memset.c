@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * ft_memset - writes len bytes of value c (converted to an unsigned char) to the string b.
+ *
+ * @s: The string to write to.
+ * @c: The character to write.
+ * @n: The number of bytes to write.
+ *
+ * Return: A pointer to the memory area s.
+ */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	i;

@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstlast - returns the last element of the list.
+ *
+ * @lst: The beginning of the list.
+ *
+ * Return: The last element of the list.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

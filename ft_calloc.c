@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * ft_calloc - allocates memory for an array of nmemb elements
+ *			of size bytes each and returns a pointer to the allocated memory.
+ *
+ * @nelem: The number of elements.
+ * @elsize: The size of each element.
+ *
+ * Return: A pointer to the allocated memory. NULL if the allocation fails.
+ */
 void	*ft_calloc(size_t nelem, size_t elsize)
 {
 	void	*arr;

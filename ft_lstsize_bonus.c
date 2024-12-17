@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstsize - counts the number of elements in a list.
+ *
+ * @lst: The beginning of the list.
+ *
+ * Return: The number of elements in the list.
+ */
 int	ft_lstsize(t_list *lst)
 {
 	t_list	*node;

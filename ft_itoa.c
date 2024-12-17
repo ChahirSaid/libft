@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * ft_intlen - counts the number of digits in an integer.
+ *
+ * @n: The integer to count the digits of.
+ *
+ * Return: The number of digits in the integer.
+ */
 static size_t	ft_intlen(long n)
 {
 	size_t	len;
@@ -32,6 +39,13 @@ static size_t	ft_intlen(long n)
 	return (len);
 }
 
+/**
+ * fill_str - fills a string with the digits of an integer.
+ *
+ * @str: The string to fill.
+ * @n: The integer to convert to a string.
+ * @len: The length of the integer.
+ */
 static void	fill_str(char *str, long n, size_t len)
 {
 	str[len] = '\0';
@@ -47,6 +61,13 @@ static void	fill_str(char *str, long n, size_t len)
 	}
 }
 
+/**
+ * ft_itoa - converts an integer to a string.
+ *
+ * @nb: The integer to convert.
+ *
+ * Return: The string representing the integer. NULL if the allocation fails.
+ */
 char	*ft_itoa(int nb)
 {
 	long	n;

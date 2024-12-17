@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstnew - allocates and returns a new element.
+ *
+ * @content: The content to create the new element with.
+ *
+ * Return: The new element.
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;

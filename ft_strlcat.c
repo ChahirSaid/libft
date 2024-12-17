@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * ft_strlcat - appends the NUL-terminated string src to the end of dst.
+ *
+ * @dst: The destination string.
+ * @src: The source string.
+ * @size: The size of the destination buffer.
+ *
+ * Return: The total length of the string they tried to create.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;

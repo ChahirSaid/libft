@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * ft_strnstr - locates the first occurrence of the null-terminated string target
+ *				in the string str, where not more than len characters are searched.
+ *
+ * @str: The string to search.
+ * @target: The string to search for.
+ * @len: The number of characters to search.
+ *
+ * Return: A pointer to the located string, or NULL if the string is not found.
+ */
 char	*ft_strnstr(const char *str, const char *target, size_t len)
 {
 	size_t	target_len;

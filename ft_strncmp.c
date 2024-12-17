@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * ft_strncmp - compares at most the first n bytes of s1 and s2.
+ *
+ * @s1: The first string to compare.
+ * @s2: The second string to compare.
+ * @n: The maximum number of bytes to compare.
+ *
+ * Return: 0 if the first n bytes of s1 and s2 are identical.
+ * Otherwise the difference between the first differing pair of bytes.
+ */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * ft_isascii - checks for an ASCII character, which is any character
+ *				between 0 and octal 0177 inclusive.
+ *
+ * @c: The character to check.
+ *
+ * Return: 1 if the character is an ASCII character, 0 otherwise.
+ */
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

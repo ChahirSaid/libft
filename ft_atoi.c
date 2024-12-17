@@ -12,11 +12,25 @@
 
 #include "libft.h"
 
+/**
+ * ft_isspace - checks for a white-space character.
+ *
+ * @c: The character to check.
+ *
+ * Return: 1 if the character is a white-space character, 0 otherwise.
+ */
 static int	ft_isspace(int c)
 {
 	return ((c >= 9 && c <= 13) || c == 32);
 }
 
+/**
+ * ft_isdigit - checks for a digit (0 through 9).
+ *
+ * @c: The character to check.
+ *
+ * Return: 1 if the character is a digit, 0 otherwise.
+ */
 int	ft_atoi(const char *str)
 {
 	int		i;

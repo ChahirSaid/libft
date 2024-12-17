@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * ft_bzero - writes n zeroed bytes to the string s.
+ *
+ * @s: The string to write to.
+ * @n: The number of zeroed bytes to write.
+ *
+ * Return: None.
+ */
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;

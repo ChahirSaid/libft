@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstiter - iterates the list ’lst’ and applies the function ’f’ to the
+ *				content of each element.
+ *
+ * @lst: The address of a pointer to an element.
+ * @f: The address of the function used to iterate on the list.
+ *
+ * Return: None.
+ */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!f)
