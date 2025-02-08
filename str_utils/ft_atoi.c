@@ -13,23 +13,12 @@
 #include "../includes/libft.h"
 
 /**
- * ft_isspace - checks for a white-space character.
+ * ft_atoi - Converts a string to an integer.
  *
- * @c: The character to check.
+ * @str: The string to convert.
  *
- * Return: 1 if the character is a white-space character, 0 otherwise.
- */
-static int	ft_isspace(int c)
-{
-	return ((c >= 9 && c <= 13) || c == 32);
-}
-
-/**
- * ft_isdigit - checks for a digit (0 through 9).
- *
- * @c: The character to check.
- *
- * Return: 1 if the character is a digit, 0 otherwise.
+ * Return: The integer value of the string.
+ *         Returns -1 on overflow.
  */
 int	ft_atoi(const char *str)
 {
@@ -40,7 +29,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	res = 0;
-	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
