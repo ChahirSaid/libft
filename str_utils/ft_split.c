@@ -95,7 +95,8 @@ static char	**ft_free_split(char **strs, int count)
 }
 
 /**
- * ft_split - splits a string into an array of strings using a delimiter character.
+ * ft_split
+	- splits a string into an array of strings using a delimiter character.
  *
  * @s: The string to split.
  * @c: The delimiter character.

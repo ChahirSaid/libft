@@ -12,7 +12,6 @@
 
 #include "../includes/libft.h"
 
-
 /**
  * ft_uintlen - Calculate length of an unsigned integer
  *

@@ -21,7 +21,7 @@
  * Returns: Pointer to allocated memory, or NULL on failure
  */
 void	*ft_calloc(size_t count, size_t size)
-	{
+{
 	void	*allocated_memory;
 	size_t	total_size;
 
@@ -30,7 +30,7 @@ void	*ft_calloc(size_t count, size_t size)
 	total_size = count * size;
 	allocated_memory = malloc(total_size);
 	if (!allocated_memory)
-	return (NULL);
+		return (NULL);
 	ft_bzero(allocated_memory, total_size);
 	return (allocated_memory);
 }

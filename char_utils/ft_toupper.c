@@ -30,7 +30,8 @@ static int	ft_islower(int c)
  * @c: The character to convert.
  *
  * Return: If the character is a lowercase letter, the function returns the
- * corresponding uppercase letter. Otherwise, the character is returned unchanged.
+ * corresponding uppercase letter. Otherwise,
+	the character is returned unchanged.
  */
 int	ft_toupper(int c)
 {

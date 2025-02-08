@@ -12,6 +12,7 @@
 
 #include "../includes/get_next_line.h"
 #include "../includes/libft.h"
+
 /**
  * ft_read_file - Read from a file descriptor into a buffer
  *

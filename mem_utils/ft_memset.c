@@ -13,7 +13,8 @@
 #include "../includes/libft.h"
 
 /**
- * ft_memset - writes len bytes of value c (converted to an unsigned char) to the string b.
+ * ft_memset
+	- writes len bytes of value c to the string b.
  *
  * @s: The string to write to.
  * @c: The character to write.

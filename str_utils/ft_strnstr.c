@@ -13,8 +13,10 @@
 #include "../includes/libft.h"
 
 /**
- * ft_strnstr - locates the first occurrence of the null-terminated string target
- *				in the string str, where not more than len characters are searched.
+ * ft_strnstr
+	- locates the first occurrence of the null-terminated string target
+ *				in the string str,
+					where not more than len characters are searched.
  *
  * @str: The string to search.
  * @target: The string to search for.

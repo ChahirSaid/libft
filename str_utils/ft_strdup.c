@@ -38,7 +38,8 @@ static char	*ft_strcpy(char *dest, const char *src)
  *
  * @src: The string to duplicate.
  *
- * Return: A pointer to the duplicated string or NULL if insufficient memory was available.
+ * Return: A pointer to the duplicated string
+ *		or NULL if insufficient memory was available.
  */
 char	*ft_strdup(const char *src)
 {

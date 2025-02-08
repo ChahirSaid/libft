@@ -27,7 +27,6 @@ static char	plus(t_format flag)
 	return ('-');
 }
 
-
 /**
  * ft_printnbr - Print formatted number with various flags
  *

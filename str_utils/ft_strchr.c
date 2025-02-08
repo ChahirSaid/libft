@@ -13,12 +13,14 @@
 #include "../includes/libft.h"
 
 /**
- * ft_strchr - locates the first occurrence of c (converted to a char) in the string pointed to by s.
+ * ft_strchr
+	- locates the first occurrence of c in the string pointed to by s.
  *
  * @str: The string to search.
  * @c: The character to search for.
  *
- * Return: A pointer to the located character, or NULL if the character does not appear in the string.
+ * Return: A pointer to the located character,
+	or NULL if the character does not appear in the string.
  */
 char	*ft_strchr(const char *str, int c)
 {

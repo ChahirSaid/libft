@@ -13,7 +13,8 @@
 #include "../includes/libft.h"
 
 /**
- * ft_putendl_fd - outputs the string s to the given file descriptor followed by a newline.
+ * ft_putendl_fd
+	- outputs the string s to the given file descriptor followed by a newline.
  *
  * @s: The string to output.
  * @fd: The file descriptor on which to write.

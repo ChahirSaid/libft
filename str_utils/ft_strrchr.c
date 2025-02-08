@@ -18,7 +18,8 @@
  * @str: The string to search.
  * @c: The character to search for.
  *
- * Return: A pointer to the located character, or NULL if the character does not appear in the string.
+ * Return: A pointer to the located character,
+	or NULL if the character does not appear in the string.
  */
 char	*ft_strrchr(const char *str, int c)
 {

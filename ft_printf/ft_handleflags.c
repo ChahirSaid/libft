@@ -18,7 +18,7 @@
  *
  * @format: Pointer to formatting flags structure
  */
- void	init_flag(t_format *format)
+void	init_flag(t_format *format)
 {
 	format->sharp = 0;
 	format->space = 0;
